@@ -13,55 +13,66 @@
         <h1>CheckPoint Event</h1>
         <nav>
             <ul>
-                <li>Home</li>
-                <li>Experience</li>
-                <li>About</li>
-                <li>Contact</li>
+                <li><a href="#description">Descrição</a></li>
+                <li><a href="#speakers">Palestrantes</a></li>
+                <li><a href="#agenda">Agenda</a></li>
+                <li><a href="#registration">Inscrição</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="home">
-            <div>
-                <h2>CheckPoint Experience</h2>
-            </div>
+        <!-- sobre o evento -->
+        <section id="description" class="section">
+            <h2>Sobre o Evento</h2>
+            <p>O CheckPoint Event é uma experiência única para aprendizado em HTML e CSS</p>
         </section>
-        <section class="experiencia" id="Exp">
-            <div class="container">
-                <h2>Our Experience</h2>
-                <div id="card-01" class="card">
-                    <div class="card-content">
-                        <img src="img/people-taking-part-high-protocol-event.jpg" alt="People on an Event" />
-                        <h3>Experience</h3>
-                        <p>This event offers an unique learning experience for HTML and css !</p>
-                    </div>
-                </div>
-                <div id="card-02" class="card02">
-                    <div class="card-content02" id="buttom">
-                        <h3>Experience</h3>
-                        <p>Join completing the doc below</p>
-                    </div>
-                </div>
-                <div>
 
-                </div>
+        <!-- palestrantes -->
+        <section id="speakers" class="section">
+            <h2>Palestrantes</h2>
+            <div class="speakers-container">
+                <article class="speaker">
+                    <img src="img/licensed-image.jpeg" alt="Palestrante 1">
+                    <h3>YE WEST</h3>
+                    <p>Especialista em desenvolvimento front-end E professor na FIAP.</p>
+                </article>
+                <article class="speaker">
+                    <img src="img/licensed-image (1).jpeg" alt="Palestrante 2">
+                    <h3>TAYLOR SWIFT</h3>
+                    <p>Engenheira de software e professora na FIAP</p>
+                </article>
             </div>
         </section>
-        <section id="inscricao" class="form">
-            <h2>Registration</h2>
+
+        <!-- agenda de horários -->
+        <section id="agenda" class="section">
+            <h2>Agenda</h2>
+            <ul>
+                <li>09:00 - Recepção</li>
+                <li>10:00 - Palestra: Introdução ao HTML e CSS</li>
+                <li>13:00 - Pausa para Almoço</li>
+                <li>16:00 - Palestra: Mercado de Trabalho</li>
+                <li>17:00 - Encerramento</li>
+            </ul>
+        </section>
+
+        <!-- formulário -->
+        <section id="registration" class="section">
+            <h2>Inscreva-se</h2>
             <form>
-                <label for="nome">Name:</label>
-                <input type="text" id="nome" required>
+                <label for="name">Nome:</label>
+                <input type="text" id="name" required>
                 <label for="email">Email:</label>
                 <input type="email" id="email" required>
-                <button type="submit">Register</button>
+                <button type="submit">Registrar</button>
             </form>
         </section>
     </main>
+
+    <!-- rodapé -->
     <footer>
-        <p class="foot_direitos">2024 - Jogos Fiap. todos os direitos reservados.</p>
+        <p>2024 CheckPoint Event. Todos os direitos reservados.</p>
     </footer>
 </body>
-
 </html>
