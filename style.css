@@ -1,149 +1,159 @@
-body{
-    background-color: rgb(201, 201, 201);
-}
-/*Estilo para nosso cabeçalho*/
-header{
-    background-color: #333;
-    padding: 20px;
-    color: white;
-}
-header h1{
-    text-align: center;
-    font-size: 36px;
-}
-header nav ul{
-    
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 15px;
-}
-header nav li{
-    margin: 15px;
-}
-header nav li a{
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-}
-header nav li a:hover{
-    text-decoration: underline;
-    color: black;
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #444; 
+    background-color: #e0e0e0;
+    margin: 0;
+    padding: 0;
 }
 
-.home{
-    background: url('img/image02.jpg') no-repeat center center/cover;
-    height: 500px;
+/* Cabeçalho */
+header {
+    background-color: #555;
+    color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 32px;
+}
+
+header nav ul {
     display: flex;
     justify-content: center;
-    align-items: center;
+    padding: 0;
+    margin: 10px 0;
+}
+
+header nav li {
+    margin: 0 15px;
+}
+
+header nav li a {
+    color: #f0f0f0;
+    font-size: 18px;
+}
+
+header nav li a:hover {
+    color: #b0b0b0;
+}
+
+/* section sobre o evento */
+.section {
+    padding: 40px 20px;
     text-align: center;
-    box-shadow: white;
+    background-color: #fff;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
-.home h2{
-    font-size: 48px;
-    font-family: 'Courier New', Courier, monospace;
-    color: white;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+
+/* Descrição */
+#description p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
 }
-.home p{
-    font-size: 20%;
-    color: white;
-    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+
+/* Contêiner dos Palestrantes */
+.speakers-container {
+    display: flex;
+    justify-content: center;
+    padding: 50px ;
 }
-.home a{
-    color: black;
+
+/* Palestrantes */
+.speaker {
+    width: 250px; /* Aumentado para dar mais destaque */
+    text-align: center;
 }
-.home .btn{
-    background-color: #000000;
-    color: white;
+
+.speaker img {
+    width: 100%; /* Largura total do contêiner */
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra mais intensa */
+}
+
+.speaker img:hover {
+    transform: scale(1.1); /* Leve aumento no hover */
+}
+
+.speaker h3 {
+    font-size: 22px;
+    color: #333; /* Cinza escuro */
+}
+
+.speaker p {
+    font-size: 16px;
+    color: #666; /* Cinza claro */
+}
+
+/* Agenda */
+#agenda ul {
+    list-style: none;
+    padding: 0;
+}
+
+#agenda li {
+    font-size: 18px;
+    padding: 10px 0;
+    border-bottom: 1px solid #bbb; /* Linha cinza */
+}
+
+/* Formulário de Inscrição */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin: 10px 0 5px;
+    color: #444;
+}
+
+form input {
+    width: 100%;
     padding: 10px;
-    text-decoration: none;
+    margin-bottom: 15px;
+    border: 1px solid #555; /* Borda cinza médio */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #f0f0f0; /* Fundo cinza claro */
+}
+
+form button {
+    background-color: #777; /* Cinza mais escuro */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
     font-size: 18px;
     border-radius: 5px;
-    box-shadow: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
-.foot_direitos{
+
+form button:hover {
+    background-color: #555; /* Tom mais escuro ao passar o mouse */
+}
+
+/* Rodapé */
+footer {
+    background-color: #555;
+    color: #f0f0f0;
+    padding: 20px;
     text-align: center;
+    margin-top: 20px;
+}
 
-    }
-    .experiencia{
-        background-color: white;
-        color: #333;
-        justify-content: center;;
-    }
-    .experiencia h2{
-        text-align: center;
-        font-size: 36px;
-    }
-    .card{
-        text-align: center;
-        background-color: #333;
-        border-radius: 10px;
-        width: 1920x;
-        box-shadow: #333;
-        justify-content: center;
-    }
-    .card02{
-        text-align: center;
-        border: 1px solid #000;
-        border-radius: 10px;
-    }
-    .card-content02{
-        padding: 30px;
-        justify-content: center;
-        font-family: 'Courier New', Courier, monospace;
-    }
-    .card img{
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-        display: flex;
-    }
-    .card-content{
-        padding: 30px;
-        justify-content: center;
-        font-family: 'Courier New', Courier, monospace;
-    }
-    .card h3{
-        font-size: 24px;
-        margin: 10px;
-        color: white;
-    }
-    .card p{
-        font-size: 16px;
-        color: white;
-    }
-    .card :hover{
-        transform: scale(1.05);
-    }
-    .container{
-        color: white;
-        width: 100%;
-        margin: 0 auto;
-        background-color: #333;
-    }
+/* Efeito de Transição e Estilo de Links */
+a {
+    color: #777;
+    text-decoration: none;
+}
 
-    footer{
-        background-color: #333;
-        color: white;
-        padding: 20px;
-        text-align: center;
-        margin-top: 50px;
-    }
-
-
-    .card .btn{
-        background-color: #000000;
-        color: white;
-        padding: 10px;
-        text-decoration: none;
-        font-size: 18px;
-        border-radius: 5px;
-        box-shadow: white;
-    }
-
-    .form{
-        text-align: center;
-        font-family: 'Courier New', Courier, monospace;
-    }
+a:hover {
+    color: #555;
+}
